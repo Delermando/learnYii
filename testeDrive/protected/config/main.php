@@ -20,14 +20,17 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+                'import'=>array(
+                    'application.models.*',
+                    'application.components.*',
+                ),
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'1123581321',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+			'ipFilters'=>array($_SERVER['REMOTE_ADDR']),
 		),
-		*/
+		
 	),
 
 	// application components
@@ -51,7 +54,16 @@ return array(
 		*/
 
 		// database settings are configured in database.php
-		'db'=>require(dirname(__FILE__).'/database.php'),
+		'db'=>array(
+                    'connectionString' => 'mysql:host=localhost;dbname=yii',
+                    'emulatePrepare' => true,
+                    'username' => 'root',
+                    'password' => '',
+                    'charset' => 'utf8',
+                    'tablePrefix'=>'',
+                    'enableProfiling'=>true,
+                    'enableParamLogging'=>true,
+                ),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
