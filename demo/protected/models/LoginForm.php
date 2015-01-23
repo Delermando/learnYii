@@ -29,7 +29,7 @@ class LoginForm extends CFormModel
 			array('password', 'authenticate'),
 		);
 	}
-
+        
 	/**
 	 * Declares attribute labels.
 	 */
