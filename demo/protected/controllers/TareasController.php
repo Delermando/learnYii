@@ -22,4 +22,21 @@ class TareasController extends Controller{
         }
         $this->render('edit', array('model'=>$model));
     }
+
+    public function actionAdd() {
+        $model = new Tareas();
+        if(isset($_POST['Tareas'])){
+            $model->attributes = $_POST['Tareas'];
+            if($model->save()){
+                $this->redirect(array('view','id'=>$model->id));
+            }
+        }
+        $this->render('add', array('model'=>$model));
+    }
+    
+    public function actionDelete($id) {
+        $model = Tareas::model()->findByPK($id);
+        $model->delete();
+        $this->redirect(array('index'));    
+    }
 }
