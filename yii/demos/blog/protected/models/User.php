@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The followings are the available columns in table 'tbl_user':
+ * The followings are the available columns in table 'User':
  * @property integer $id
  * @property string $username
  * @property string $password
