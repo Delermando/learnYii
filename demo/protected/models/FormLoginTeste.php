@@ -2,15 +2,18 @@
 
 class FormLoginTeste {
 
-    public $model01;
-    private $model02;
+    public $username;
+    public $password;
+    public $remenberMe = false;
+    private $_identify;
+    
 
-    public function __construct() {
-        
-    }
-
-    public function model01() {
-        
+    public function rules() {
+        return array(
+            array('username, password','required'),
+            array('rememberMe','boolean'),
+            array('password','autenticate')
+        );
     }
 
     private function model02() {
