@@ -760,3 +760,99 @@ Stack trace:
 REQUEST_URI=/tareas/1.jpg
 HTTP_REFERER=http://local.testandoyii.com/tareas/index
 ---
+2015/01/23 19:06:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "favicon.ico".' in /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/01/23 19:06:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "favicon.ico".' in /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/01/23 19:07:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "testea".' in /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('testea')
+#1 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/testea
+---
+2015/01/23 19:07:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "testea".' in /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('testea')
+#1 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/testea
+---
+2015/01/23 19:13:20 [error] [exception.CException] exception 'CException' with message 'TareasController não pôde encontrar a visualização "view" solicitada.' in /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CController.php:878
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#1 /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/protected/controllers/TareasController.php(12): CController->render('view', Array)
+#2 [internal function]: TareasController->actionView('1')
+#3 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(TareasController), Array)
+#4 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(TareasController), Object(ReflectionMethod), Array)
+#5 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('tareas/view')
+#10 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/tareas/1.jpg
+HTTP_REFERER=http://local.testandoyii.com/tareas/
+---
+2015/01/23 19:14:06 [error] [exception.CException] exception 'CException' with message 'TareasController não pôde encontrar a visualização "view" solicitada.' in /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CController.php:878
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#1 /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/protected/controllers/TareasController.php(12): CController->render('view', Array)
+#2 [internal function]: TareasController->actionView('1')
+#3 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(TareasController), Array)
+#4 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(TareasController), Object(ReflectionMethod), Array)
+#5 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('tareas/view')
+#10 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/tareas/1.jpg
+HTTP_REFERER=http://local.testandoyii.com/tareas/
+---
+2015/01/23 19:52:08 [warning] [application] Failed to set unsafe attribute "nome" of "Tareas".
+in /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/protected/controllers/TareasController.php (18)
+in /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/index.php (13)
+2015/01/23 19:52:08 [warning] [application] Failed to set unsafe attribute "description" of "Tareas".
+in /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/protected/controllers/TareasController.php (18)
+in /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/index.php (13)
+2015/01/23 19:52:22 [warning] [application] Failed to set unsafe attribute "nome" of "Tareas".
+in /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/protected/controllers/TareasController.php (18)
+in /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/index.php (13)
+2015/01/23 19:52:22 [warning] [application] Failed to set unsafe attribute "description" of "Tareas".
+in /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/protected/controllers/TareasController.php (18)
+in /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/index.php (13)
+2015/01/23 19:59:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "favicon.ico".' in /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/01/23 19:59:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "favicon.ico".' in /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /usr/local/www/data-dist/projetos/programacao/testandoYii/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /usr/local/www/data-dist/projetos/programacao/testandoYii/demo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

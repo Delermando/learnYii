@@ -12,6 +12,7 @@
             <td><?php echo $t->nome; ?></td>
             <td><?php echo $t->description; ?></td>
             <td><?php echo CHtml::link('Ver', array('view', 'id'=>$t->id)) ?></td>
+            <td><?php echo CHtml::link('Editar', array('edit', 'id'=>$t->id)) ?></td>
         </tr>
     <?php }?>
 </table>
