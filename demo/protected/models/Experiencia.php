@@ -48,7 +48,7 @@ class Experiencia extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idUsuario0' => array(self::BELONGS_TO, 'Usuarios', 'idUsuario'),
+			'usuarios' => array(self::BELONGS_TO, 'Usuarios', 'idUsuario'),
 		);
 	}
 

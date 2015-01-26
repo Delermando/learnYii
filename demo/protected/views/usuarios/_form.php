@@ -33,7 +33,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'estado'); ?>
-		<?php echo $form->textField($model,'estado'); ?>
+		<?php echo $form->dropDownList($model,'estado', array(''=>'','1'=>'Ativo', '0'=>'Desativo')); ?>
 		<?php echo $form->error($model,'estado'); ?>
 	</div>
 
@@ -45,13 +45,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'genero'); ?>
-		<?php echo $form->textField($model,'genero',array('size'=>2,'maxlength'=>2)); ?>
+		<?php echo $form->dropDownList($model,'genero',  Usuarios::getGenero()); ?>
 		<?php echo $form->error($model,'genero'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'idCidade'); ?>
-		<?php echo $form->textField($model,'idCidade'); ?>
+		<?php echo $form->dropDownList($model,'idCidade',  Usuarios::getListCidade(),array('empty'=>'')); ?>
 		<?php echo $form->error($model,'idCidade'); ?>
 	</div>
 

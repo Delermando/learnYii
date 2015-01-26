@@ -8,7 +8,7 @@ ini_set('display_errors', true);
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Aprendendo Yii',
-	'language'=>'pt',
+	'language'=>'es',
 	'sourceLanguage'=>'en',
 	'charset'=>'utf-8',
 

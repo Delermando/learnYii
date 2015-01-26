@@ -48,12 +48,18 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'id',
 		'nome',
 		'email',
-		'estado',
+		array(
+                    'name'=>'estado',
+                    'value'=>'$data->statusName()'
+                ),
 		'identificacao',
-		'genero',
-		/*
+                array(
+                    'name'=>'genero',
+                    'header'=>'Genero',
+                    'value'=>'Usuarios::getGenero($data->genero)'
+                ),
+//		'genero',
 		'idCidade',
-		*/
 		array(
 			'class'=>'CButtonColumn',
 		),

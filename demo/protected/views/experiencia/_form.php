@@ -27,19 +27,47 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'inicio'); ?>
-		<?php echo $form->textField($model,'inicio'); ?>
+		<?php 
+                    $this->widget('zii.widgets.jui.CJuiDatePicker',
+                        array(
+                            'model'=> $model,
+                            'attribute' => 'inicio',
+                            'language' => 'pt',
+                            'options' => array(
+                                'dateFormat' => 'yy-mm-dd',
+                                'constraintInput' => 'false',
+                                'duration' => 'fast',
+                                'showAnim' => 'slide'
+                            )
+                        )
+                    );
+                ?>  
 		<?php echo $form->error($model,'inicio'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'fim'); ?>
-		<?php echo $form->textField($model,'fim'); ?>
+		<?php 
+                    $this->widget('zii.widgets.jui.CJuiDatePicker',
+                        array(
+                            'model'=> $model,
+                            'attribute' => 'inicio',
+                            'language' => 'pt',
+                            'options' => array(
+                                'dateFormat' => 'yy-mm-dd',
+                                'constraintInput' => 'false',
+                                'duration' => 'fast',
+                                'showAnim' => 'slide'
+                            )
+                        )
+                    );
+                ?>
 		<?php echo $form->error($model,'fim'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'idUsuario'); ?>
-		<?php echo $form->textField($model,'idUsuario'); ?>
+		<?php echo $form->dropDownList($model,'idUsuario', CHtml::listData(Usuarios::model()->findAll("estado = 1"), 'id', 'nome')); ?>
 		<?php echo $form->error($model,'idUsuario'); ?>
 	</div>
 

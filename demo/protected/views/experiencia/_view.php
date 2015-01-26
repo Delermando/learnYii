@@ -16,6 +16,10 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('inicio')); ?>:</b>
 	<?php echo CHtml::encode($data->inicio); ?>
 	<br />
+        
+	<b><?php echo 'Usuario'; ?>:</b>
+	<?php echo CHtml::encode($data->usuarios->nome); ?>
+	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('fim')); ?>:</b>
 	<?php echo CHtml::encode($data->fim); ?>

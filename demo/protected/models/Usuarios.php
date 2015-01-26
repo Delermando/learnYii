@@ -20,6 +20,7 @@
  */
 class Usuarios extends CActiveRecord
 {
+    public static $genero = array(''=>'', 'M'=>'Masculino', 'F'=>'Feminino');
 	/**
 	 * @return string the associated database table name
 	 */
@@ -63,20 +64,33 @@ class Usuarios extends CActiveRecord
 			'cidade' => array(self::BELONGS_TO, 'Cidade', 'idCidade'),
 		);
 	}
-
-	/**
+        
+        public static function getGenero($key = null){
+            if($key !== null)
+                return self::$genero[$key];
+            return self::$genero;
+        }
+        
+        public function statusName() {
+            return $this->estado==1?'Ativo':'Inativo';
+        }
+        
+        public static function getListCidade() {
+            return CHtml::listData(Cidade::model()->findAll(), 'id', 'nome');
+        }
+        /**
 	 * @return array customized attribute labels (name=>label)
 	 */
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
+			'id' => 'User ID',
 			'nome' => 'Nome',
 			'email' => 'Email',
-			'estado' => 'Estado',
+			'estado' => 'Status',
 			'identificacao' => 'Identificacao',
 			'genero' => 'Genero',
-			'idCidade' => 'Cidade',
+			'idCidade' => 'Cidade Nasc.',
 		);
 	}
 
