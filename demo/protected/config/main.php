@@ -5,7 +5,6 @@ ini_set('display_errors', true);
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
-
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Aprendendo Yii',
@@ -32,11 +31,13 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'1123581321',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array($_SERVER['REMOTE_ADDR']),
+			'ipFilters'=>array('192.168.100.1'),
+//			'ipFilters'=>array($_SERVER['REMOTE_ADDR']),
+
 		),
 		
 	),
-
+    
 	// application components
 	'components'=>array(
 

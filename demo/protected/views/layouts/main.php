@@ -29,12 +29,18 @@
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-                                array('label'=>'Saludo', 'url'=>array('/saludo/index')),
-                                array('label'=>'Tareas', 'url'=>array('/tareas/index')),
-                                array('label'=>'User', 'url'=>array('/user/index')),
-                                array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
+                                array('label'=>'Gii', 'url'=>array('/gii')),
+                                array('label'=>'Usuario', 'url'=>array('/usuarios')),
+                                array('label'=>'Cidade', 'url'=>array('/cidade')),
+                                array('label'=>'Experiencia', 'url'=>array('/experiencia')),
+                                array('label'=>'Estudos', 'url'=>array('/estudos')),
+                                array('label'=>'Resultado', 'url'=>array('/resultado')),
+//                                array('label'=>'Saludo', 'url'=>array('/saludo/index')),
+//                                array('label'=>'Tareas', 'url'=>array('/tareas/index')),
+//                                array('label'=>'User', 'url'=>array('/user/index')),
+//                                array('label'=>'Home', 'url'=>array('/site/index')),
+//				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+//				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
