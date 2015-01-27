@@ -63,7 +63,15 @@ return array(
             
             // database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),
-
+                
+                'coreMessages'=>array(
+                    'basePath'=>'protected/messages'
+                ),
+               
+                'messages'=>array(
+                    'onMissingTranslation'=>array('GMessages','getNeedTranslation')
+                ),
+            
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',

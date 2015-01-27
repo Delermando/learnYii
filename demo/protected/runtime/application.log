@@ -1645,3 +1645,32 @@ Stack trace:
 REQUEST_URI=/usuarios/create.jpg
 HTTP_REFERER=http://local.testandoyii.com/usuarios.jpg
 ---
+2015/01/27 14:06:31 [error] [php] Object of class CMissingTranslationEvent could not be converted to string (/usr/local/www/data-dist/projetos/estudos/learnYii/demo/protected/components/GMessages.php:9)
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/i18n/CMessageSource.php(125): CPhpMessageSource->raiseEvent()
+#1 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/i18n/CMessageSource.php(109): CPhpMessageSource->onMissingTranslation()
+#2 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/i18n/CMessageSource.php(85): CPhpMessageSource->translateMessage()
+#3 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/YiiBase.php(589): CPhpMessageSource->translate()
+#4 /usr/local/www/data-dist/projetos/estudos/learnYii/demo/protected/views/usuarios/index.php(18): t()
+#5 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/CBaseController.php(126): require()
+#6 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/CBaseController.php(95): UsuariosController->renderInternal()
+#7 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/CController.php(869): UsuariosController->renderFile()
+#8 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/CController.php(782): UsuariosController->renderPartial()
+#9 /usr/local/www/data-dist/projetos/estudos/learnYii/demo/protected/controllers/UsuariosController.php(128): UsuariosController->render()
+#10 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/actions/CInlineAction.php(49): UsuariosController->actionIndex()
+#11 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/filters/CFilterChain.php(133): UsuariosController->runAction()
+#13 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/filters/CInlineFilter.php(58): UsuariosController->filterAccessControl()
+#16 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/CController.php(265): UsuariosController->runActionWithFilters()
+#19 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/CWebApplication.php(282): UsuariosController->run()
+#20 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /usr/local/www/data-dist/projetos/estudos/learnYii/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /usr/local/www/data-dist/projetos/estudos/learnYii/demo/index.php(13): CWebApplication->run()
+REQUEST_URI=/usuarios.jpg
+in /usr/local/www/data-dist/projetos/estudos/learnYii/demo/protected/components/GMessages.php (9)
+in /usr/local/www/data-dist/projetos/estudos/learnYii/demo/protected/views/usuarios/index.php (18)
+in /usr/local/www/data-dist/projetos/estudos/learnYii/demo/protected/controllers/UsuariosController.php (128)
